@@ -14,13 +14,13 @@ This is a simple API built with Laravel that accepts a website URL, parses any t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/jinuvarghese-cmd/table-parser-api.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd your-repo
+   cd table-parser-api
    ```
 
 3. Install the dependencies via Composer:
@@ -41,10 +41,7 @@ This is a simple API built with Laravel that accepts a website URL, parses any t
    php artisan key:generate
    ```
 
-6. Set up caching (optional):
-   - Ensure your cache system is configured correctly (e.g., `file`, `redis`, etc.) in the `.env` file.
-
-7. Run the server:
+6. Run the server:
 
    ```bash
    php artisan serve
@@ -159,12 +156,6 @@ If there's an issue processing the request (e.g., unexpected errors):
 - **404** - Not Found: No tables found on the given URL.
 - **502** - Bad Gateway: Failed to fetch website content.
 - **500** - Internal Server Error: Server-side error while processing.
-
----
-
-### **Rate Limiting** (Optional):
-
-If your API becomes publicly available, consider adding rate limiting to prevent abuse. For example, limit requests to 60 per minute.
 
 ---
 
